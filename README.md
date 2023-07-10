@@ -49,6 +49,6 @@ If you use this code or find it helpful, please consider citing:
 }
 ```
 ## Authors
-- [Federico Nocentini](https://scholar.google.com/citations?user=EpQCpoUAAAAJ&hl=en).
+- [Federico Nocentini](https://scholar.google.com/citations?user=EpQCpoUAAAAJ&hl=en)
 - [Claudio Ferrari](https://scholar.google.com/citations?user=aael17YAAAAJ&hl=en)
 - [Stefano Berretti](https://scholar.google.com/citations?user=3GPTAGQAAAAJ&hl=en)
