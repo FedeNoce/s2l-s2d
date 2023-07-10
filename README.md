@@ -8,7 +8,7 @@ To run the code, you need to install the following dependencies:
 - PyTorch-GPU 1.13.0
 - Trimesh 3.9.2
 - Librosa 3.9.2
-- Transformers 4.6.1
+- Transformers 4.6.1 from Hugging Face
 - MPI-IS for mesh rendering ([link](https://github.com/MPI-IS/mesh))
 - Additional dependencies for running the demo: pysimplegui==4.60.5, sounddevice==0.4.6, soundfile==0.12.1
 
