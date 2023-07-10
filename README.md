@@ -4,9 +4,11 @@ This repository contains the code for the paper "Learning Landmarks Motion from 
 
 <p align="center">
   <img src="https://github.com/FedeNoce/s2l-s2d/blob/main/images/s2l.png"/>
+  <figcaption>S2L Model Overview</figcaption>
 </p>
 <p align="center">
   <img src="https://github.com/FedeNoce/s2l-s2d/blob/main/images/s2d.png"/>
+  <figcaption>S2D Model Overview</figcaption>
 </p>
 
 
