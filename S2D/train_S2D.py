@@ -14,15 +14,7 @@ from train_funcs import train_autoencoder_dataloader
 import argparse
 
 
-def loss_naima(outputs, targets, inputs, displacement, device):
-    weights = np.load('./template/template/Normalized_d_weights.npy', allow_pickle=True)
-    Weigths = torch.from_numpy(weights).float().to(device)
-    target_expression = outputs - inputs
-    L = (torch.matmul(Weigths, torch.abs(outputs[:, :-1, :] - targets[:, :-1, :]))).mean() + 0.1 * torch.abs(
-        target_expression - displacement).mean()
-    return L
-
-def loss_l1(outputs, targets, inputs, displacement, device):
+def Weighted_Loss(outputs, targets, inputs, displacement, device):
     outputs = outputs.float()
     mse = nn.MSELoss(reduction='none')
     cos_sim = nn.CosineSimilarity(dim=2)
@@ -131,7 +123,7 @@ def train(args):
                                       spirals=tspirals,
                                       D=tD, U=tU, device=device).to(device)
 
-    loss_fn = loss_l1
+    loss_fn = Weighted_Loss
 
     optim = torch.optim.Adam(my_decoder.parameters(), lr=args.lr)
 
@@ -143,7 +135,7 @@ def main():
     parser.add_argument("--reference_mesh_file", type=str, default='./template/flame_model/FLAME_sample.ply', help='path of the template')
     parser.add_argument("--epochs", type=int, default=1000, help='number of epochs')
     parser.add_argument("--device", type=str, default="cuda:0")
-    parser.add_argument("--root_dir", type=str, default='./coma_florence/training_data')
+    parser.add_argument("--root_dir", type=str, default='./vocaset/training_data')
     parser.add_argument("--result_dir", type=str, default='./Results')
 
     args = parser.parse_args()
