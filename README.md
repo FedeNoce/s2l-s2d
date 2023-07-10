@@ -4,4 +4,16 @@ In this paper we propose a novel approach, based on landmarks motion, for genera
 
 * [**Federico Nocentini**](https://github.com/FedeNoce)
 
+##Installation
+To run the code you will need to install:
+* python=3.8
+* pytorch-gpu=1.13.0
+* trimesh=3.9.2
+* librosa=3.9.2
+* transformers=4.6.1
 
+##Setup
+*  Clone the repo
+```sh
+git clone https://github.com/FedeNoce/Kmeans.git
+```
