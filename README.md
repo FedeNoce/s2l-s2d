@@ -1,3 +1,6 @@
+To add the citation you provided to the README, you can include it at the end of the file as follows:
+
+```markdown
 # S2L-S2D: Learning Landmarks Motion from Speech for Speaker-Agnostic 3D Talking Heads Generation
 
 This repository contains the code for the paper "Learning Landmarks Motion from Speech for Speaker-Agnostic 3D Talking Heads Generation" ([link](https://arxiv.org/abs/2306.01415)). The paper presents a novel approach based on landmarks motion for generating 3D Talking Heads from speech. The code includes the implementation of two models proposed in the paper: S2L and S2D.
@@ -35,3 +38,18 @@ git clone https://github.com/FedeNoce/s2l-s2d.git
 2. Run the GUI demo using "new_gui_demo.py".
 
 For more information, you can visit the GitHub profile of [Federico Nocentini](https://github.com/FedeNoce).
+
+## Citation
+
+If you use this code or find it helpful, please consider citing:
+
+```
+@misc{nocentini2023learning,
+  title={Learning Landmarks Motion from Speech for Speaker-Agnostic 3D Talking Heads Generation},
+  author={Federico Nocentini and Claudio Ferrari and Stefano Berretti},
+  year={2023},
+  eprint={2306.01415},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}
+```
