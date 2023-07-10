@@ -2,6 +2,9 @@
 
 This repository contains the code for the paper "Learning Landmarks Motion from Speech for Speaker-Agnostic 3D Talking Heads Generation" ([link](https://arxiv.org/abs/2306.01415)). The paper presents a novel approach based on landmarks motion for generating 3D Talking Heads from speech. The code includes the implementation of two models proposed in the paper: S2L and S2D.
 
+![alt text](https://github.com/FedeNoce/s2l-s2d/images/s2l.jpg)
+![alt text](https://github.com/FedeNoce/s2l-s2d/images/s2d.jpg)
+
 ## Installation
 To run the code, you need to install the following dependencies:
 - Python 3.8
