@@ -155,7 +155,7 @@ def render_sequence_meshes(window, audio_fname, sequence_vertices, template, out
             render_mesh.vt, render_mesh.ft = vt, ft
         img = render_mesh_helper(render_mesh, center, tex_img=tex_img)
         writer.write(img)
-        cv2.imwrite('/images/template.png', img)
+        cv2.imwrite('./images/template.png', img)
         window["-IMAGE_PREVIEW-"].update(filename='/images/template.png')
         window.refresh()
         i = i + 1
@@ -409,7 +409,7 @@ def main():
         global recorded_audio_path, recording
         recording = True
         #recorded_audio_path = tempfile.mktemp(suffix=".wav")
-        recorded_audio_path = '/Audios/record.wav'
+        recorded_audio_path = './Audios/record.wav'
         fs = 44100  # Sample rate
         duration = 5  # Recording duration
         window["-OUTPUT-"].update('Recording started...')
