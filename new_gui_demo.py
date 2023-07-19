@@ -155,8 +155,8 @@ def render_sequence_meshes(window, audio_fname, sequence_vertices, template, out
             render_mesh.vt, render_mesh.ft = vt, ft
         img = render_mesh_helper(render_mesh, center, tex_img=tex_img)
         writer.write(img)
-        cv2.imwrite('/home/federico/Scrivania/TH/Demos/template.png', img)
-        window["-IMAGE_PREVIEW-"].update(filename='/home/federico/Scrivania/TH/Demos/template.png')
+        cv2.imwrite('/images/template.png', img)
+        window["-IMAGE_PREVIEW-"].update(filename='/images/template.png')
         window.refresh()
         i = i + 1
     writer.release()
@@ -358,9 +358,6 @@ def main():
     parser.add_argument("--S2L", type=str, default='S2L/Results/301_s2l.pth', help='path to the S2L model')
     parser.add_argument("--S2D", type=str, default='S2D/Results/s2d.pth.tar', help='path to the S2D model')
     parser.add_argument("--template_file", type=str, default="S2L/vocaset/templates.pkl", help='faces to animate')
-    #parser.add_argument("--template_name", type=str, default="FaceTalk_170728_03272_TA", help='face to animate')
-    #parser.add_argument("--audio_path", type=str, default='photo.wav', help='audio to animate')
-    #parser.add_argument("--save_path", type=str, default='Demo2', help='path for results')
     parser.add_argument("--flame_template", type=str, default="S2L/vocaset/flame_model/FLAME_sample.ply", help='template_path')
     parser.add_argument("--video_name", type=str, default="example.mp4", help='name of the rendered video')
     parser.add_argument("--fps", type=int, default=60, help='frames per second')
@@ -412,7 +409,7 @@ def main():
         global recorded_audio_path, recording
         recording = True
         #recorded_audio_path = tempfile.mktemp(suffix=".wav")
-        recorded_audio_path = '/home/federico/Scrivania/TH/Audios/record.wav'
+        recorded_audio_path = '/Audios/record.wav'
         fs = 44100  # Sample rate
         duration = 5  # Recording duration
         window["-OUTPUT-"].update('Recording started...')
