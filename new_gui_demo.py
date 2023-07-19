@@ -156,7 +156,7 @@ def render_sequence_meshes(window, audio_fname, sequence_vertices, template, out
         img = render_mesh_helper(render_mesh, center, tex_img=tex_img)
         writer.write(img)
         cv2.imwrite('./images/template.png', img)
-        window["-IMAGE_PREVIEW-"].update(filename='/images/template.png')
+        window["-IMAGE_PREVIEW-"].update(filename='./images/template.png')
         window.refresh()
         i = i + 1
     writer.release()
