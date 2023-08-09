@@ -33,7 +33,7 @@ git clone https://github.com/FedeNoce/s2l-s2d.git
 
 ## Inference
 1. Download the pretrained models from [here](https://drive.google.com/drive/folders/1h0l8cMUh_7GVedJykYH8zSEqNhj3BVeJ?usp=sharing) and place them in the "S2L/Results" and "S2D/Results" directories.
-2. Run the GUI demo using "new_gui_demo.py".
+2. Run the GUI demo using "demo.py".
 
 ## Citation
 
