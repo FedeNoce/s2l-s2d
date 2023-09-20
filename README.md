@@ -15,7 +15,7 @@ Check out some qualitative results in this [video](https://drive.google.com/file
 To run the code, you need to install the following dependencies:
 - Python 3.8
 - PyTorch-GPU 1.13.0
-- Trimesh 3.9.2
+- Trimesh 3.22.1
 - Librosa 3.9.2
 - Transformers 4.6.1 from Hugging Face
 - MPI-IS for mesh rendering ([link](https://github.com/MPI-IS/mesh))
