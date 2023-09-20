@@ -13,11 +13,9 @@ import sounddevice as sd
 import soundfile as sf
 import tempfile
 import os
-import cv2
 import Get_landmarks
 from S2L.model import Speech2Land
 from transformers import Wav2Vec2Processor
-import PIL
 import time
 import os
 import cv2
