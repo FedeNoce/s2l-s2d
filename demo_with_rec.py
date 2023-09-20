@@ -534,7 +534,7 @@ def main():
             media_list.add_media(video_path)
             list_player.set_media_list(media_list)
             list_player.play()
-            window["-OUTPUT-"].update('Demo Completed')
+            window["-OUTPUT_DEMO-"].update('Demo Completed')
             window.refresh()
             
             
