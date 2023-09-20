@@ -368,12 +368,7 @@ def main():
     "photo.wav",
     "italian.wav",
     "watch.wav",
-    "military.wav",
-    "sample1.wav",
-    "language.wav",
-    "power.wav",
-    "pain.wav",
-    "ted_ita.wav"
+    "military.wav"
     ]
     
     #sg.theme_previewer()
