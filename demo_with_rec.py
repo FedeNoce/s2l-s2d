@@ -34,18 +34,7 @@ from scipy.io import wavfile
 import scipy.misc
 from Rec.FacePartsSwap.face_swap import rec
 
-
 os.environ['PYOPENGL_PLATFORM'] = 'egl'
-def get_unit_factor(unit):
-    if unit == 'mm':
-        return 1000.0
-    elif unit == 'cm':
-        return 100.0
-    elif unit == 'm':
-        return 1.0
-    else:
-        raise ValueError('Unit not supported')
-
 
 def render_mesh_helper(mesh, t_center, rot=np.zeros(3), tex_img=None, v_colors=None, errors=None, error_unit='m', min_dist_in_mm=0.0, max_dist_in_mm=3.0, z_offset=0):
 
