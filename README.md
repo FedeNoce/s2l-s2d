@@ -34,7 +34,7 @@ git clone https://github.com/FedeNoce/s2l-s2d.git
 ## Inference
 1. Download the pretrained models from [here](https://drive.google.com/drive/folders/1h0l8cMUh_7GVedJykYH8zSEqNhj3BVeJ?usp=sharing) and place them in the "S2L/Results" and "S2D/Results" directories.
 2. Run the GUI demo using "demo.py".
-3. If you want we have a newer version of the demo in which we can reconstruct the face of the user starting from a photo with a fitting of a 3DMM. Before running the demo using "demo_with_rec.py" you need to download from [here](https://drive.google.com/file/d/14XsH52qLvcaGs8Io9RqecqYj7terK6ld/view?usp=sharing) a file and put it in "Rec/Values"
+3. If you're interested, we have an updated version of the demo that allows us to reconstruct a user's face from a photo using a 3DMM fitting. Before running the demo using "demo_with_rec.py" you'll need to download a file from [here](https://drive.google.com/file/d/14XsH52qLvcaGs8Io9RqecqYj7terK6ld/view?usp=sharing) and place it in the "Rec/Values" directory.
 
 ## Citation
 
