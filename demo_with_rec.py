@@ -152,9 +152,8 @@ def render_sequence_meshes(window, audio_fname, sequence_vertices, template, out
             render_mesh.vt, render_mesh.ft = vt, ft
         img = render_mesh_helper(render_mesh, center, tex_img=tex_img)
         writer.write(img)
-        cv2.imwrite('/home/federico/Scrivania/TH/Demos/template.png', img)
-        cv2.imwrite('/home/federico/Scrivania/TH/Images/template' + str(i) + '.png', img)
-        window["-IMAGE_PREVIEW-"].update(filename='/home/federico/Scrivania/TH/Demos/template.png')
+        cv2.imwrite('./Demos/template.png', img)
+        window["-IMAGE_PREVIEW-"].update(filename='./Demos/template.png')
         window.refresh()
         i = i + 1
     writer.release()
@@ -204,7 +203,7 @@ def generate_landmarks(args, model_path, audio_path, template_file, save_path, t
             templates = pickle.load(fin, encoding='latin1')
         actor_vertices = templates[template_name]
     else:
-        actor = trimesh.load('/home/federico/Scrivania/TH/Rec/reconstruction.ply')
+        actor = trimesh.load('./Rec/reconstruction.ply')
         actor_vertices = actor.vertices
         
     actor_landmarks = Get_landmarks.get_landmarks(actor_vertices)
