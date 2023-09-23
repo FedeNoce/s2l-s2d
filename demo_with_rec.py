@@ -396,9 +396,9 @@ def main():
         global recorded_audio_path, recording
         recording = True
         #recorded_audio_path = tempfile.mktemp(suffix=".wav")
-        recorded_audio_path = '/home/federico/Scrivania/TH/Audios/record.wav'
+        recorded_audio_path = './Audios/record.wav'
         fs = 44100  # Sample rate
-        duration = 3  # Recording duration
+        duration = 5  # Recording duration
         window["-OUTPUT_AUDIO-"].update('Recording started...')
         window.refresh()
         print("Recording started...")
@@ -500,6 +500,7 @@ def main():
 
             window["-OUTPUT_DEMO-"].update('Video Generation ...')
             window.refresh()
+            start = time.time()
             print('Video Generation')
             generate_mesh_video(save_video_path,
                                 args.video_name,
@@ -511,6 +512,9 @@ def main():
             
             # Generate the video and save it
             video_path = os.path.join(save_video_path, args.video_name)
+            end = time.time()
+
+            print(str(end - start) + ' Seconds')
             print('done')
             media_list.add_media(video_path)
             list_player.set_media_list(media_list)
