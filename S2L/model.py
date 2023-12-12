@@ -48,6 +48,6 @@ class Speech2Land(nn.Module):
 
         shift_emb, _ = self.lstm(hidden_states)
 
-        landmarks_pred = self.output_mapper(shift_emb) * 1.2 + template.unsqueeze(0)
+        landmarks_pred = self.output_mapper(shift_emb) + template.unsqueeze(0)
 
         return landmarks_pred
